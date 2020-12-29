@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Semantics Elements</title>
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <h1>Estrutura</h1>
+  <h2>Não semânticos - Genéricos</h2>
+    <div>
+      <strong>DIV</strong>
+        É um block element, usado em último caso quando outras tags não podem ser usadas,
+        serve para agrupar elementos, estilizar, identificar áreas para serem manipuladas no js.
+        Leva pra baixo os elementos seguintes.
+        Não adiciona um significado semântico.
+        Um block element pode conter inlines e blocks elements.
+    </div> <br>
+
+    <span><strong>Span </strong>É um inline element, elemento genérico assim como a div,
+      usado quando nenhuma outra tag pode ser usada.
+      Não muda o layout da página. Pode conter somente outro inline element.</span>
+
+  <h2>Semânticos - Específicos</h2>
+    <section>
+      <strong>Section </strong>
+      Usada para identificar uma seção de um documento, geralmente com um heading.
+      According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+      Um exemplo de uso seria capítulos de um livro.
+    </section> <br>
+
+    <article>
+      <strong>Article </strong>
+      Especifica um conteúdo independente e autocontido.
+      Deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.
+      Exemplos de onde um elemento pode ser usado: Postagem no fórum, postagem do blog e artigo de jornal.
+    </article> <br>
+
+    <header>
+      <strong>Header </strong>
+      Representa um container para de conteúdo introdutório ou links de navegação.
+      Pode conter: headings, logo e informação de autoria.
+      Você pode ter vários desses elementos em um documento HTML. 
+      No entanto, não pode ser colocado em um footer, address ou outro elemento header.
+    </header> <br>
+
+    <footer>
+      <strong>Footer </strong>
+      Pode conter: informação de direitos, endereço, informações de contato, documentos relacionados.
+      Podem existir mais de um footer em um documento.
+    </footer>
+
+  <h1>Navegação, mídia e conteúdo</h1>
+    <strong>Link </strong>
+    <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Exemplo de link</a> <br>
+
+    <strong>Forms </strong>
+    <form method="POST">
+      <fieldset>
+        <label>Nome</label> <input type="text" name="nome"> <br>
+
+        <label>Telefone</label> <input type="number" name="telefone"> <br>
+
+        <label>Sexo</label>
+        <input type="radio" name="sexo" value="feminino"> Feminino
+        <input type="radio" name="sexo" value="masculino"> Masculino <br>
+
+        <label>País</label>
+        <select name="pais">
+          <option>Brasil</option>
+          <option>Cuba</option>
+          <option>Inglaterra</option>
+          <option>Japão</option>
+        </select> <br>
+
+        <label>Notas:</label>
+        <textarea name="notas" cols="12" rows="5"></textarea>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Salvar">
+        <!-- <button type="submit">Salvar</button> -->
+      </fieldset>
+    </form>
+</body>
+</html>
